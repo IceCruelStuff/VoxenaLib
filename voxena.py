@@ -4,10 +4,10 @@ import socket
 
 class Voxena(Thread):
     def __init__(self, port, ip):
-        if ip is not None:
-            ip = ip
+        if self.ip is not None:
+            self.ip = self.ip
         else:
-            ip = '127.0.0.1'
+            self.ip = '127.0.0.1'
 
     sock = socket.socket(socket.AF_INET,
                          socket.SOCK_DGRAM)
@@ -26,3 +26,9 @@ class Voxena(Thread):
 
     def ping(self):
         pass
+
+    def getPort(self):
+        return self.port
+
+    def getIp(self):
+        return  self.ip
