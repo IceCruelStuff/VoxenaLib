@@ -21,7 +21,7 @@ class Voxena(Thread):
     def getChunks(self, id):
         pass
 
-    def updateChunks(self):
+    def updateChunks(self, id, modification):
         pass
 
     def ping(self):
