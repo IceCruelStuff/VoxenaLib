@@ -1,3 +1,3 @@
 class Voxena:
-    def __init__(self):
+    def start(self, port, ip):
         pass
